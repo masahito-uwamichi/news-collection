@@ -16,7 +16,9 @@ def load_seen():
     return {}
 
 def save_seen(seen):
-    with open('feeds/state/seen.json', 'w', encoding='utf-8') as f:
+    state_file = 'feeds/state/seen.json'
+    os.makedirs(os.path.dirname(state_file), exist_ok=True)
+    with open(state_file, 'w', encoding='utf-8') as f:
         json.dump(seen, f, indent=2, ensure_ascii=False)
 
 def main():
