@@ -1,0 +1,13 @@
+sources:
+  - name: "Apache Iceberg"
+    url: "https://iceberg.apache.org/feed.xml"
+    category: "Data Platform"
+    tags: ["table-format", "data-lake"]
+  - name: "Quantum Computing Report"
+    url: "https://quantumcomputingreport.com/feed/"
+    category: "Quantum Computing"
+    tags: ["quantum", "hardware"]
+  - name: "Google AI Blog"
+    url: "https://blog.google/technology/ai/rss/"
+    category: "AI"
+    tags: ["llm", "google"]
