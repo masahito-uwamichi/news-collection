@@ -59,6 +59,7 @@ def main():
         return
 
     digest_path = f"feeds/digests/{today}.md"
+    os.makedirs(os.path.dirname(digest_path), exist_ok=True)
     with open(digest_path, 'w', encoding='utf-8') as f:
         f.write(f"---\ndate: {today}\n---\n\n")
         f.write(f"# RSS Digest - {today}\n\n")
